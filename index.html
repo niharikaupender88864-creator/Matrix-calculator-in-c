@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matrix Calculator in C</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matrix Calculator</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
-    <h1>Matrix Calculator in C</h1>
 
-    <p class="description">
-        A console-based Matrix Calculator developed in C that performs various
-        matrix operations such as Addition, Subtraction, Multiplication,
-        Transpose, Determinant, Inverse, Matrix Classification and Export Result.
-    </p>
+<h1>Matrix Calculator in C</h1>
 
-    <h2>Features</h2>
+<div class="matrices">
 
-    <ul>
-        <li>Matrix Addition</li>
-        <li>Matrix Subtraction</li>
-        <li>Matrix Multiplication</li>
-        <li>Transpose</li>
-        <li>Determinant</li>
-        <li>Inverse</li>
-        <li>Identity Matrix Check</li>
-        <li>Symmetric Matrix Check</li>
-        <li>Sparse Matrix Check</li>
-        <li>Export Result to Text File</li>
-    </ul>
+<div class="matrix">
+<h2>Matrix A</h2>
 
-    <button onclick="showMessage()">
-        View Project Status
-    </button>
+<input type="number" id="a11">
+<input type="number" id="a12"><br>
 
-    <p id="status"></p>
+<input type="number" id="a21">
+<input type="number" id="a22">
+
+</div>
+
+<div class="matrix">
+
+<h2>Matrix B</h2>
+
+<input type="number" id="b11">
+<input type="number" id="b12"><br>
+
+<input type="number" id="b21">
+<input type="number" id="b22">
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button onclick="addMatrices()">Addition</button>
+
+<button onclick="subtractMatrices()">Subtraction</button>
+
+<button onclick="multiplyMatrices()">Multiplication</button>
+
+<button onclick="transposeMatrix()">Transpose A</button>
+
+<button onclick="determinant()">Determinant A</button>
+
+</div>
+
+<h2>Result</h2>
+
+<div id="result"></div>
 
 </div>
 
